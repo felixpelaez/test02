@@ -1,0 +1,16 @@
+<h4>Fruit list</h4>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Price</th>
+  </tr>
+  <tr *ngFor="let fruit of fruitList">
+    <td>{{ fruit.name }}</td>
+    <td>{{ fruit.price }}</td>
+  </tr>
+</table>
+
+<app-fruit-add
+  [fruitForm]="fruitCreationForm"
+  (saveFruitEvent)="onSave($event)"
+></app-fruit-add>

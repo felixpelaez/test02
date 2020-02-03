@@ -1,0 +1,13 @@
+<p>Add a new fruit</p>
+
+<div [formGroup]="fruitForm">
+  <label>Name: </label>
+  <input type="text" [formControl]="fruitForm.get('name')">
+  <br>
+  <br>
+  <label>Price: </label>
+  <input type="text" [formControl]="fruitForm.get('price')">
+  <br>
+  <br>
+  <button (click)="save()">Add fruit</button>
+</div>

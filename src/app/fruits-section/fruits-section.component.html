@@ -1,0 +1,7 @@
+<h3>Fruits section</h3>
+
+<app-fruits-statistics [fruitList]="fruitListState"></app-fruits-statistics>
+
+<app-fruit-list [fruitList]="fruitListState"
+                (saveFruitEvent)="onSave($event)"
+></app-fruit-list>

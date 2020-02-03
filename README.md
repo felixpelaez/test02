@@ -1,27 +1,24 @@
-# SupermarketApp
+# Exercise
+## Description
+You are working in a project called superMarketApp. A developer who work with you, has just finished 
+a new feature development that consists of a new "fruits section" in which you can check the list of 
+fruits, add a new fruit and see some statistics regarding to fruit prices.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.1.
+## TODO
+You have to do a code review of the development that your colleage has done.
+For that, you must check the code under /src/app.
 
-## Development server
+You have to add all your remarks directly as comments in the code, starting every comment 
+by "CodeReview" this way:
+> // CodeReview YourRemarksHere
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+We are going to valuate your ability to find code smells, error designs and all the improvements
+that you think must be done to keep the code clear, readable, maintainable, etc.
 
-## Code scaffolding
+It is allowed to do very small changes in the code if you think that they are 
+too obvious.
+But don't forget that this is a code review, so you should just provide instructions
+to your colleage about how to improve the code in comments.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Create a commit in master with your remarks.
+Compress the whole project and send it back by email.
