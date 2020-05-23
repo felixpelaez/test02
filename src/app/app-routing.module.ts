@@ -5,6 +5,9 @@ import {FruitsSectionComponent} from './fruits-section/fruits-section.component'
 
 const routes: Routes = [
   {
+    // CodeReview It needs use the component
+    //{ path: 'stocks', component: FruitsSectionComponent },
+
     path: 'fruits-section',
     // pathMatch: 'full',
     component: FruitsSectionComponent

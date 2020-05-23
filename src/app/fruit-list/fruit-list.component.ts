@@ -22,4 +22,9 @@ export class FruitListComponent {
   onSave($event: any) {
     this.saveFruitEvent.emit($event);
   }
+  /*CodeReview. Implement trackByFn
+  trackByFn(index, item) {
+    return index;
+  }
+  */
 }

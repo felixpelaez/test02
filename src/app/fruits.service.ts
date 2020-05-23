@@ -40,11 +40,19 @@ class HttpClientFake {
 
   retrieveLastWorkingDayAverage() {
     console.log('slow call');
+    // CodeReview Eliminate el delay 5000. Its better, used when you have data
     return of(28)
       .pipe(delay(5000)); // This simulate a slow call to the backend.
   }
 
   create(fruit: Fruit) {
+    /* CodeReview. Its necesary this structure. Try with this
+    return this.http.post<Fruit>(this.backend_url, Fruit, { headers })
+    .pipe(
+      tap(data => console.log('create Fruit: ' + JSON.stringify(data))),
+      catchError(this.handleError)
+      );*/
+
     this.fruitListState.next([
       ...this.fruitListState.getValue(),
       {...fruit, id: this.idCounter++}

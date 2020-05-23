@@ -1,9 +1,12 @@
 <h4>Fruit list</h4>
+  <!--CodeReview You have to use ul, Try dont use tables -->
 <table>
   <tr>
     <th>Name</th>
     <th>Price</th>
   </tr>
+  <!--CodeReview  Use trackByFn
+    <tr *ngFor="let item of collection;trackBy: trackByFn">{{fruit.name}}</tr> -->
   <tr *ngFor="let fruit of fruitList">
     <td>{{ fruit.name }}</td>
     <td>{{ fruit.price }}</td>
